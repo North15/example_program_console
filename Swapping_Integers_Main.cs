@@ -8,6 +8,12 @@ namespace example_program_console
 {
     public class Swaping_Integers_Main
     {
+        public void Display_Directions()
+        {
+
+            return;
+        }
+
         public void Swap_With_Two_Integers()
         {
             int Integer_A,

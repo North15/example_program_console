@@ -14,33 +14,30 @@ namespace example_program_console
         {
             int menu_selection;
             Swaping_Integers_Main Swap = new Swaping_Integers_Main();
+            Sorting Sort = new Sorting();
+            Searching Search = new Searching();
 
             while (get_response() == 'y')
             {
                 do
                 {
                     Console.WriteLine("\n\n\n   Please select a program from the menu:");
-                    Console.WriteLine("       1. Swapping Integers");
-                    Console.WriteLine("       2. Ordered Sequential Search");
-                    Console.WriteLine("       3. Probibility Search");
-                    Console.WriteLine("       4. Binary Search");
+                    Console.WriteLine("       1. Swapping");
+                    Console.WriteLine("       2. Sorting");
+                    Console.WriteLine("       3. Searching");
                     Console.WriteLine($"\n\n       {EXIT_VALUE}. Exit Menu");
                     menu_selection = Console.ReadKey().KeyChar;
 
                     switch (menu_selection)
                     {
                         case 1:
-                            Swap.Swap_With_Two_Integers();
-                            Swap.Swap_With_Three_Integers();
+                            Swap.Display_Directions();
                             break;
                         case 2:
-
+                            Sort.Display_Directions();
                             break;
                         case 3:
-
-                            break;
-                        case 4:
-
+                            Search.Display_Directions();
                             break;
                         case EXIT_VALUE:
                             Console.WriteLine("\n\n\n   Thank you for trying these programs!");
